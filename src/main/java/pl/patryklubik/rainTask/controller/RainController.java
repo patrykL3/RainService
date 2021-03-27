@@ -21,6 +21,7 @@ public class RainController {
 
     @PostMapping
     public int getNumberOfFloodedTableSquares(@RequestBody int[] table) {
+
         return rainService.getNumberOfFloodedTableSquares(table);
     }
 }
