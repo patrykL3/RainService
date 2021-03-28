@@ -11,12 +11,10 @@ import pl.patryklubik.rainTask.RainCalculator;
 @Service
 public class RainService {
 
-    private RainCalculator rainCalculator = new RainCalculator();
+    private final RainCalculator rainCalculator = new RainCalculator();
 
     public int getNumberOfFloodedTableSquares(int[] table) {
 
-
-
-        return 0;
+        return rainCalculator.getNumberOfFloodedTableSquares(table);
     }
 }
